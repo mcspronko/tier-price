@@ -1,0 +1,29 @@
+<?php
+/**
+ * Copyright © Pronko Consulting (https://www.pronkoconsulting.com)
+ * See LICENSE for the license details.
+ */
+declare(strict_types=1);
+
+use Magento\Framework\View\Element\Template;
+use Pronko\TierPrice\ViewModel\TierPrice;
+
+/** @var Template $block */
+
+/** @var TierPrice $viewModel */
+$viewModel = $block->getData('viewModel');
+?>
+<script type="text/x-magento-init">
+    {
+        "*": {
+            "Magento_Ui/js/core/app": {
+                "components": {
+                    "tier-price": {
+                        "component": "Pronko_TierPrice/js/tier-price",
+                        "config": <?= /* @noEscape */ $viewModel->getJsonConfig(); ?>
+                    }
+                }
+            }
+        }
+    }
+</script>
