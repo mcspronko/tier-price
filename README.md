@@ -1,2 +1,12 @@
-Например, есть одна, кажется, очевидная фича, которая к удивлению не реализована никак в М2. Речь о tier prices, чтобы при выборе кол-ва товара, от которго начинает действовать специальная цена, пользователь видел бы эту цену, что цена меняется. 
-Т.е., например, стоит "купи 3 шт, и сэкономь столько то процентов, купи 10 шт и сэкономь еще сколько то, купи 50 шт и сэкономь 40%" . Выбираешь купить один, два - цена не меняется, выбираешь 3 - и видишь что цена изменилась. Выбираешь 10 - снова видишь как изменилась цена. 
+# Tier Price for Magento 2
+
+Show a tier price on a product page when a customer changes quantity field.
+
+## Development
+
+This extension is under development, however, the frontend part works.
+
+## TODO
+
+* Provide correct list of tier prices from a ViewModel.
+ 
